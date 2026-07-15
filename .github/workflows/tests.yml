@@ -14,14 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Tap this repo locally
+        run: brew tap queq-co/tap "$GITHUB_WORKSPACE"
+
       - name: brew audit
-        run: brew audit --strict --formula ./Formula/tuigram.rb
+        run: brew audit --strict queq-co/tap/tuigram
 
       - name: brew style
-        run: brew style ./Formula/tuigram.rb
+        run: brew style queq-co/tap/tuigram
 
       - name: brew install
-        run: brew install --formula ./Formula/tuigram.rb
+        run: brew install queq-co/tap/tuigram
 
       - name: brew test
-        run: brew test tuigram
+        run: brew test queq-co/tap/tuigram
