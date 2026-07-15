@@ -1,0 +1,27 @@
+name: tests
+
+on:
+  push:
+    paths:
+      - "Formula/**"
+  pull_request:
+    paths:
+      - "Formula/**"
+
+jobs:
+  test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: brew audit
+        run: brew audit --strict --formula ./Formula/tuigram.rb
+
+      - name: brew style
+        run: brew style ./Formula/tuigram.rb
+
+      - name: brew install
+        run: brew install --formula ./Formula/tuigram.rb
+
+      - name: brew test
+        run: brew test tuigram
