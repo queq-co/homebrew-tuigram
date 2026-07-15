@@ -16,16 +16,16 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Tap this repo locally
-        run: brew tap queq-co/tap "$GITHUB_WORKSPACE"
+        run: brew tap queq-co/tuigram "$GITHUB_WORKSPACE"
 
       - name: brew audit
-        run: brew audit --strict queq-co/tap/tuigram
+        run: brew audit --strict queq-co/tuigram/tuigram
 
       - name: brew style
-        run: brew style queq-co/tap/tuigram
+        run: brew style queq-co/tuigram/tuigram
 
       - name: brew install
-        run: brew install queq-co/tap/tuigram
+        run: brew install queq-co/tuigram/tuigram
 
       - name: brew test
-        run: brew test queq-co/tap/tuigram
+        run: brew test queq-co/tuigram/tuigram

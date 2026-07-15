@@ -1,4 +1,4 @@
-# homebrew-tap
+# homebrew-tuigram
 
 Homebrew tap for [tuigram](https://github.com/queq-co/tuigram), a terminal UI
 (Ratatui) Telegram client written in Rust.
@@ -6,7 +6,7 @@ Homebrew tap for [tuigram](https://github.com/queq-co/tuigram), a terminal UI
 ## Install
 
 ```sh
-brew install queq-co/tap/tuigram
+brew install queq-co/tuigram/tuigram
 ```
 
 ## Update
