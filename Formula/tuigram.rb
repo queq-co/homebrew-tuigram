@@ -1,9 +1,9 @@
 class Tuigram < Formula
   desc "Terminal UI (Ratatui) Telegram client written in Rust"
   homepage "https://github.com/queq-co/tuigram"
-  url "https://github.com/queq-co/tuigram/releases/download/v2026.7.2/tuigram-2026.7.2-macos-arm64.tar.gz"
-  version "2026.7.2"
-  sha256 "8ceed8f11363a7a6b8f7a32e0c8924f3f5bb235fee6d07b1f0fc5387b295a4b0"
+  url "https://github.com/queq-co/tuigram/releases/download/v2026.7.4/tuigram-2026.7.4-macos-arm64.tar.gz"
+  version "2026.7.4"
+  sha256 "b5cbbbdb03ebc62f16752166e01e1b4c154fb975c5ae2a10f45f53fabb6effc9"
   license "MIT"
 
   depends_on arch: :arm64
